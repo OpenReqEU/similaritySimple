@@ -19,8 +19,11 @@ Using words embeddings and a fast search library we found similar requiriments.
 
 Must have valid project requirement JSON files in the /data/ folder for the program to build.
 
-run:
+inside de /scripts/ folder run:
+
+
 python train_model.py 
+
 
 to train the word embeddings model. this model takes as input the text data from the requiriments and builds suitable vector representations for the words.
 The model can also infeer out-of-vocabulary words. 
