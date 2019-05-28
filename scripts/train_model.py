@@ -107,6 +107,7 @@ def create_corpurs():
                     ids2text[ req["id"] ] = {}
                     ids2text[ req["id"] ]["text"] = txt
                     ids2text[ req["id"] ]["project"] = f
+                    ids2text[ req["id"] ]["id"] = req["id"]
                     ind += 1
                     
     return corpus , mapping , data , ids2text
