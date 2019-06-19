@@ -7,7 +7,7 @@ This service was created as a result of the OpenReq project funded by the Europe
 
 # Technical Description
 
-Using words embeddings and a fast search library, similar requiriments can be searched. 
+Using words embeddings and a fast search library, similar requirements can be searched. 
 
 ## The following technologies are used:
 - Python
