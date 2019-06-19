@@ -19,10 +19,9 @@ Using words embeddings and a fast search library, similar requiriments can be se
 
 Must have valid  project and requirement OpenReqJSON files in the /data/ folder for the program to build.
 
-`inside the /scripts/ folder run:`
+Inside the /scripts/ folder run:
 
-
-python train_model.py 
+`python train_model.py` 
 
 
 to train the word embeddings model. This model takes as input the text data from the requiriments and builds suitable vector representations for the words. The model can also infeer out-of-vocabulary words. 
