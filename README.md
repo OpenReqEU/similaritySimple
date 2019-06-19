@@ -19,7 +19,7 @@ Using words embeddings and a fast search library, similar requiriments can be se
 
 Must have valid  project and requirement OpenReqJSON files in the /data/ folder for the program to build.
 
-inside the /scripts/ folder run:
+`inside the /scripts/ folder run:`
 
 
 python train_model.py 
