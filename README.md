@@ -23,7 +23,7 @@ Inside the `/scripts/` folder run:
 
 `python train_model.py` 
 
-that train and construct the word embeddings model and saves it in the `data` folder. That is, the model takes as input the text data from the above mentioned requiriments and builds suitable vector representations for the words.  
+that trains and constructs the word embeddings model and saves it in the `data` folder. That is, the model takes as input the text data from the above mentioned requiriments and builds suitable vector representations for the words.  
 
 In order to find similarities for a requirement, create  `reqs.txt` file in the `/scripts/` folder that contains the requirement in plain text form (not JSON!). There can be multiple requirements each on their own line. To detect similar requirements for the requirement, run:
 
