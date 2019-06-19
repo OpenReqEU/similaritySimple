@@ -15,11 +15,11 @@ Using words embeddings and a fast search library, similar requiriments can be se
 - gensim https://radimrehurek.com/gensim/
 	
 
-## How to Install
+## How to Use
 
-There must be one or multiple valid OpenReqJSON files containing requirements in the /data/ folder for the program to build.
+There must be one or multiple valid OpenReqJSON files containing the existing requirements in the `/data/` folder for the program to build.
 
-Inside the /scripts/ folder run:
+Inside the `/scripts/` folder run:
 
 `python train_model.py` 
 
