@@ -17,23 +17,19 @@ Using words embeddings and a fast search library, similar requiriments can be se
 
 ## How to Install
 
-Must have valid  project and requirement OpenReqJSON files in the /data/ folder for the program to build.
+There must be one or multiple valid OpenReqJSON files containing requirements in the /data/ folder for the program to build.
 
 Inside the /scripts/ folder run:
 
 `python train_model.py` 
 
+that train and construct the word embeddings model and saves it in the `data` folder. That is, the model takes as input the text data from the above mentioned requiriments and builds suitable vector representations for the words.  
 
-to train the word embeddings model. This model takes as input the text data from the requiriments and builds suitable vector representations for the words. The model can also infeer out-of-vocabulary words. 
+In order to find similarities for a requirement, create  `reqs.txt` file in the `/scripts/` folder that contains the requirement in plain text form (not JSON!). There can be multiple requirements each on their own line. To detect similar requirements for the requirement, run:
 
-this script will create a series of files that will be used for future searchs. 
-create a *reqs.txt* file in the /scripts/ folder, this file contains the requiriments to be queried. One line text requirement per line
+`python similaritySimple.py` 
 
-inside de /scripts/ folder run:
-
-python similaritySimple.py 
-
-This will produce an output.json file in the same folder with the output. for each queried requiriment the top 10 closest candidates are selected.
+This will produce an `output.json` file in the same folder. For each queried requiriment the top 10 closest candidates are listed.
 
 
 ## Notes for Developers
