@@ -17,6 +17,8 @@ Using words embeddings and a fast search library, similar requiriments can be se
 
 ## How to Use
 
+Clone the code to your local folder.
+
 There must be one or multiple valid OpenReqJSON files containing the existing requirements in the `/data/` folder for the program to build.
 
 Inside the `/scripts/` folder run:
