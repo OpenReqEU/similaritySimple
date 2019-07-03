@@ -1,13 +1,13 @@
 # Similarity search prototype
 
-A similarity search prototype based on word embeddings and fast search in dense vector spaces.
+A similarity search prototype that is based on word embeddings and fast search in dense vector spaces.
 
 
 This service was created as a result of the OpenReq project funded by the European Union Horizon 2020 Research and Innovation programme under grant agreement No 732463.
 
 # Technical Description
 
-Using words embeddings and a fast search library we found similar requiriments. 
+Using words embeddings and a fast search library, similar requirements can be searched. 
 
 ## The following technologies are used:
 - Python
@@ -15,27 +15,23 @@ Using words embeddings and a fast search library we found similar requiriments.
 - gensim https://radimrehurek.com/gensim/
 	
 
-## How to Install
+## How to Use
 
-Must have valid project requirement JSON files in the /data/ folder for the program to build.
+Clone the code to your local folder.
 
-inside de /scripts/ folder run:
+There must be one or multiple valid OpenReqJSON files containing the existing requirements in the `/data/` folder for the program to build.
 
+Inside the `/scripts/` folder run:
 
-python train_model.py 
+`python train_model.py` 
 
+that trains and constructs the word embeddings model and saves it in the `data` folder. That is, the model takes as input the text data from the above mentioned requiriments and builds suitable vector representations for the words.  
 
-to train the word embeddings model. this model takes as input the text data from the requiriments and builds suitable vector representations for the words.
-The model can also infeer out-of-vocabulary words. 
+In order to find similarities for a requirement, create  `reqs.txt` file in the `/scripts/` folder that contains the requirement in plain text form (not JSON!). There can be multiple requirements each on their own line. To detect similar requirements for the requirement, run:
 
-this script will create a series of files that will be used for future searchs. 
-create a *reqs.txt* file in the /scripts/ folder, this file contains the requiriments to be queried. One line text requirement per line
+`python similaritySimple.py` 
 
-inside de /scripts/ folder run:
-
-python similaritySimple.py 
-
-This will produce an output.json file in the same folder with the output. for each queried requiriment the top 10 closest candidates are selected.
+This will produce an `output.json` file in the same folder. For each queried requiriment the top 10 closest candidates are listed.
 
 
 ## Notes for Developers
